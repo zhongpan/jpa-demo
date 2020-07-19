@@ -20,6 +20,7 @@ public class VmhostRepositoryImpl extends BaseRepository implements VmhostReposi
 
   // 多表左连接
 
+  @Override
   public List<VmhostDTO> findVmhost(Predicate predicate) {
     JPAQueryFactory queryFactory = new JPAQueryFactory(em);
     JPAQuery<VmhostDTO> jpaQuery = queryFactory
@@ -33,6 +34,7 @@ public class VmhostRepositoryImpl extends BaseRepository implements VmhostReposi
     return jpaQuery.fetch();
   }
 
+  @Override
   public QueryResults<VmhostDTO> findVmhostByPage(Predicate predicate, Pageable pageable) {
     JPAQueryFactory queryFactory = new JPAQueryFactory(em);
     JPAQuery<VmhostDTO> jpaQuery = queryFactory

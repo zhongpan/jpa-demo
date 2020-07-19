@@ -14,7 +14,6 @@ public class VmhostInfoDTO {
     this.tenantName = tenantName;
   }
 
-
   public String getId() {
     return id;
   }
@@ -47,6 +46,4 @@ public class VmhostInfoDTO {
     this.tenantName = tenantName;
   }
 
-
-  
 }

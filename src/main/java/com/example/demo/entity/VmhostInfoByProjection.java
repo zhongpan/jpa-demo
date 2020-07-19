@@ -10,7 +10,7 @@ public interface VmhostInfoByProjection {
 
   public String getUserName();
 
-  @Value("#{target.tname}")//当别名与该getXXX名称不一致时，可以使用该注解调整
+  @Value("#{target.tname}") // 当别名与该getXXX名称不一致时，可以使用该注解调整
   public String getTenantName();
 
 }

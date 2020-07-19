@@ -8,8 +8,7 @@ import javax.persistence.PersistenceContext;
 @NoRepositoryBean
 public class BaseRepository {
 
-    @PersistenceContext
-    protected EntityManager em;
-
+  @PersistenceContext
+  protected EntityManager em;
 
 }

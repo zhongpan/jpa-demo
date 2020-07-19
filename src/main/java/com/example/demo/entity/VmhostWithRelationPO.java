@@ -53,7 +53,6 @@ public class VmhostWithRelationPO {
     this.id = id;
   }
 
-
   public String getName() {
     return name;
   }
@@ -61,7 +60,6 @@ public class VmhostWithRelationPO {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public String getAvailablezone() {
     return availablezone;
@@ -71,7 +69,6 @@ public class VmhostWithRelationPO {
     this.availablezone = availablezone;
   }
 
-
   public String getType() {
     return type;
   }
@@ -79,7 +76,6 @@ public class VmhostWithRelationPO {
   public void setType(String type) {
     this.type = type;
   }
-
 
   public Long getCpucore() {
     return cpucore;
@@ -89,7 +85,6 @@ public class VmhostWithRelationPO {
     this.cpucore = cpucore;
   }
 
-
   public Long getRamsize() {
     return ramsize;
   }
@@ -97,7 +92,6 @@ public class VmhostWithRelationPO {
   public void setRamsize(Long ramsize) {
     this.ramsize = ramsize;
   }
-
 
   public String getDisksize() {
     return disksize;
@@ -107,7 +101,6 @@ public class VmhostWithRelationPO {
     this.disksize = disksize;
   }
 
-
   public String getPrivatenetworkid() {
     return privatenetworkid;
   }
@@ -115,7 +108,6 @@ public class VmhostWithRelationPO {
   public void setPrivatenetworkid(String privatenetworkid) {
     this.privatenetworkid = privatenetworkid;
   }
-
 
   public java.sql.Timestamp getCreatetime() {
     return createtime;
@@ -125,7 +117,6 @@ public class VmhostWithRelationPO {
     this.createtime = createtime;
   }
 
-
   public String getVmstatus() {
     return vmstatus;
   }
@@ -133,7 +124,6 @@ public class VmhostWithRelationPO {
   public void setVmstatus(String vmstatus) {
     this.vmstatus = vmstatus;
   }
-
 
   public String getMetadata() {
     return metadata;
@@ -143,7 +133,6 @@ public class VmhostWithRelationPO {
     this.metadata = metadata;
   }
 
-
   public String getAddresses() {
     return addresses;
   }
@@ -151,7 +140,6 @@ public class VmhostWithRelationPO {
   public void setAddresses(String addresses) {
     this.addresses = addresses;
   }
-
 
   public String getHostname() {
     return hostname;
@@ -161,7 +149,6 @@ public class VmhostWithRelationPO {
     this.hostname = hostname;
   }
 
-
   public String getFloatip() {
     return floatip;
   }
@@ -169,7 +156,6 @@ public class VmhostWithRelationPO {
   public void setFloatip(String floatip) {
     this.floatip = floatip;
   }
-
 
   public String getUsername() {
     return username;
@@ -179,7 +165,6 @@ public class VmhostWithRelationPO {
     this.username = username;
   }
 
-
   public String getTenantname() {
     return tenantname;
   }
@@ -187,8 +172,9 @@ public class VmhostWithRelationPO {
   public void setTenantname(String tenantname) {
     this.tenantname = tenantname;
   }
+
   public int getBaremetal() {
-	    return baremetal;
+    return baremetal;
   }
 
   public void setBaremetal(int baremetal) {

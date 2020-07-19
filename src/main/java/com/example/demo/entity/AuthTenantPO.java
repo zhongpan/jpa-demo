@@ -19,7 +19,6 @@ public class AuthTenantPO {
   private String desc;
   private long isFromOpenstack;
 
-
   public Integer getId() {
     return id;
   }
@@ -27,7 +26,6 @@ public class AuthTenantPO {
   public void setId(Integer id) {
     this.id = id;
   }
-
 
   public String getTenantId() {
     return tenantId;
@@ -37,7 +35,6 @@ public class AuthTenantPO {
     this.tenantId = tenantId;
   }
 
-
   public String getName() {
     return this.name;
   }
@@ -45,7 +42,6 @@ public class AuthTenantPO {
   public void setName(String name) {
     this.name = name;
   }
-
 
   public java.sql.Timestamp getCreateTime() {
     return createTime;
@@ -55,7 +51,6 @@ public class AuthTenantPO {
     this.createTime = createTime;
   }
 
-
   public java.sql.Timestamp getUpdateTime() {
     return updateTime;
   }
@@ -63,7 +58,6 @@ public class AuthTenantPO {
   public void setUpdateTime(java.sql.Timestamp updateTime) {
     this.updateTime = updateTime;
   }
-
 
   public String getDesc() {
     return desc;
@@ -73,7 +67,6 @@ public class AuthTenantPO {
     this.desc = desc;
   }
 
-
   public long getIsFromOpenstack() {
     return isFromOpenstack;
   }
@@ -81,6 +74,5 @@ public class AuthTenantPO {
   public void setIsFromOpenstack(long isFromOpenstack) {
     this.isFromOpenstack = isFromOpenstack;
   }
-
 
 }

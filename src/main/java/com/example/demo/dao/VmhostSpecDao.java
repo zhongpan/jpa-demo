@@ -14,7 +14,7 @@ import org.springframework.data.jpa.repository.Query;
 public interface VmhostSpecDao extends JpaRepository<VmhostPO, String>, JpaSpecificationExecutor<VmhostInfoDTO> {
 
   // 方案二：@Query和Specification是不能混用的，也无法改变接收结果集对象
-  
+
   // 无法混用，总是query有效
   @Query("from VmhostPO")
   List<VmhostPO> findVmhost(Specification<VmhostPO> spec);

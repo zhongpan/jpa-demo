@@ -40,7 +40,6 @@ public class AuthUserPO {
     this.username = username;
   }
 
-
   public String getPassword() {
     return password;
   }
@@ -48,7 +47,6 @@ public class AuthUserPO {
   public void setPassword(String password) {
     this.password = password;
   }
-
 
   public String getUserOpenstackId() {
     return userOpenstackId;
@@ -58,7 +56,6 @@ public class AuthUserPO {
     this.userOpenstackId = userOpenstackId;
   }
 
-
   public String getNickname() {
     return nickname;
   }
@@ -66,7 +63,6 @@ public class AuthUserPO {
   public void setNickname(String nickname) {
     this.nickname = nickname;
   }
-
 
   public String getPhone() {
     return phone;
@@ -76,7 +72,6 @@ public class AuthUserPO {
     this.phone = phone;
   }
 
-
   public String getAvatar() {
     return avatar;
   }
@@ -84,7 +79,6 @@ public class AuthUserPO {
   public void setAvatar(String avatar) {
     this.avatar = avatar;
   }
-
 
   public String getEmail() {
     return email;
@@ -94,7 +88,6 @@ public class AuthUserPO {
     this.email = email;
   }
 
-
   public long getStatus() {
     return status;
   }
@@ -102,7 +95,6 @@ public class AuthUserPO {
   public void setStatus(long status) {
     this.status = status;
   }
-
 
   public long getCurrentRole() {
     return currentRole;
@@ -112,7 +104,6 @@ public class AuthUserPO {
     this.currentRole = currentRole;
   }
 
-
   public java.sql.Timestamp getCreateTime() {
     return createTime;
   }
@@ -121,7 +112,6 @@ public class AuthUserPO {
     this.createTime = createTime;
   }
 
-
   public java.sql.Timestamp getUpdateTime() {
     return updateTime;
   }
@@ -129,7 +119,6 @@ public class AuthUserPO {
   public void setUpdateTime(java.sql.Timestamp updateTime) {
     this.updateTime = updateTime;
   }
-
 
   public String getUuid() {
     return uuid;
