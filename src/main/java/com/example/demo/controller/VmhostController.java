@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.example.demo.entity.VmhostDTO;
 import com.example.demo.entity.VmhostInfoByProjection;
@@ -72,14 +73,19 @@ public class VmhostController {
     return vmhostService.listVmhostPOQDSL(name);
   }
 
-  @GetMapping("/spec/vmhostinfodto")
-  public List<VmhostInfoDTO> listVmhostSpec(@RequestParam String name) {
-    return vmhostService.listVmhostSpec(name);
+  @GetMapping("/spec_and_query/vmhostinfodto")
+  public List<VmhostInfoDTO> listVmhostInfoSpecAndQuery(@RequestParam String name) {
+    return vmhostService.listVmhostInfoSpecAndQuery(name);
   }
 
   @GetMapping("/spec_and_query/vmhostpo")
   public List<VmhostPO> listVmhostSpecAndQuery(@RequestParam String name) {
     return vmhostService.listVmhostSpecAndQuery(name);
+  }
+
+  @GetMapping("/spec/vmhostinfodto")
+  public Optional<VmhostInfoDTO> getVmhost(@RequestParam String name) {
+    return vmhostService.listVmhostSpec(name);
   }
 
   @GetMapping("/spec/vmhostwithrelationpo")

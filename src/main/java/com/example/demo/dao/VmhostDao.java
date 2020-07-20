@@ -28,7 +28,8 @@ public interface VmhostDao extends JpaRepository<VmhostPO, String> {
   @Query("select v.id as id, v.name as name, u.username as userName, t.name as tname from VmhostPO v left join AuthUserPO u on v.userid = u.id left join AuthTenantPO t on v.tenantid = t.id")
   List<VmhostInfoByProjection> findVmhostInfoByProjection();
 
-  @Query(value = "select new com.example.demo.entity.VmhostInfoDTO(v.id, v.name, u.username, t.name) from VmhostPO v left join AuthUserPO u on v.userid = u.id left join AuthTenantPO t on v.tenantid = t.id where v.name like %:name%", countQuery = "select count(*) from VmhostPO v left join AuthUserPO u on v.userid = u.id left join AuthTenantPO t on v.tenantid = t.id where v.name like %:name%")
+  @Query(value = "select new com.example.demo.entity.VmhostInfoDTO(v.id, v.name, u.username, t.name) from VmhostPO v left join AuthUserPO u on v.userid = u.id left join AuthTenantPO t on v.tenantid = t.id where v.name like %:name%", 
+  countQuery = "select count(*) from VmhostPO v left join AuthUserPO u on v.userid = u.id left join AuthTenantPO t on v.tenantid = t.id where v.name like %:name%")
   Page<VmhostInfoDTO> findVmhostInfoByPage(String name, Pageable pageable);
 
 }
