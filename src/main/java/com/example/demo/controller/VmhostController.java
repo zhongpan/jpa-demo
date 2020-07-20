@@ -92,4 +92,9 @@ public class VmhostController {
   public List<VmhostWithRelationPO> listVmhostSpecWithRelation(@RequestParam String name) {
     return vmhostService.listVmhostSpecWithRelation(name);
   }
+
+  @GetMapping("/spec/vmhostwithrelationpo_by_page")
+  public Page<VmhostWithRelationPO> listVmhostSpecWithRelationByPage(@RequestParam String name) {
+    return vmhostService.listVmhostSpecWithRelationByPage(name);
+  }
 }

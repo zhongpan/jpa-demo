@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -139,6 +140,19 @@ public class VmhostService {
     };
     List<VmhostWithRelationPO> list = vmhostSpecWithRelationDao.findAll(spec);
     return list;
+  }
+
+  public Page<VmhostWithRelationPO> listVmhostSpecWithRelationByPage(String name) {
+    Specification<VmhostWithRelationPO> spec = (root, cq, cb) -> {
+      root.join("user", JoinType.LEFT);
+      root.join("tenant", JoinType.LEFT);
+      List<javax.persistence.criteria.Predicate> predicates = new ArrayList<>();
+      predicates.add(cb.like(root.get("name"), "%" + name + "%"));
+      return cb.and(predicates.toArray(new javax.persistence.criteria.Predicate[0]));
+    };
+    PageRequest pagable = PageRequest.of(0, 5);
+    Page<VmhostWithRelationPO> page = vmhostSpecWithRelationDao.findAll(spec, pagable);
+    return page;
   }
 
 }
